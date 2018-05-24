@@ -14,7 +14,7 @@ int main(int argc, char *argv[], char *env[])
 	} 
 	else
 	{
-		int ret;
+	    int ret;
 		wait(&ret); //wait for child's exit status
 		printf("Hello from parent. My pid is %i, my child's pid is %i\n", getpid(), ch_pid);
 		printf("Its exit status is %i\n", WEXITSTATUS(ret));
