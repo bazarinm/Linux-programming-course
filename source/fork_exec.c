@@ -19,5 +19,5 @@ int main(int argc, char *argv[], char *env[])
 		printf("Hello from parent. My pid is %i, my child's pid is %i\n", getpid(), ch_pid);
 		printf("Its exit status is %i\n", WEXITSTATUS(ret));
 	}
-	getchar(); 
+	getchar();  
 }
