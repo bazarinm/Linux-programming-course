@@ -8,7 +8,7 @@ int main(int argc, char *argv[], char *env[])
 	pid_t ch_pid;
 	if((ch_pid = fork()) == 0) //child process
 	{
-		char *exec_argv[] = {"id", NULL};
+	    char *exec_argv[] = {"id", NULL};
 	    printf("Hello from child, my pid is %i\n", getpid());
 	    execve("/usr/bin/id", exec_argv, env); //execute a program
 	} 
